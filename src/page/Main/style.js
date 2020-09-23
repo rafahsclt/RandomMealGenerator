@@ -61,6 +61,7 @@ export const Content = styled.div`
     background-color: #fff;
     height: 90%;
     flex-direction: column;
+    overflow: scroll;
 `
 export const MealTitleSection = styled.div`
     display: flex;
@@ -84,8 +85,9 @@ export const MealTitleSection = styled.div`
 
 export const MealSection = styled.div`
     display: flex;
+    flex: 1;
+    height: 1fr;
     flex-direction: row;
-    height: 90%;
 `
 
 export const IngredientsSection = styled.div`
