@@ -25,7 +25,7 @@ function Main() {
 
     setIngredients(ingr)
     setMeasures(meas)
-  }, [recipe, initialState])
+  }, [])
 
   return (
     <Container >
@@ -59,7 +59,7 @@ function Main() {
               <ul>
                 {ingredients.map((ingred, index) => {
                   if(ingred) {
-                    return <li><span>{ingred}</span><span>{measures[index]}</span></li>
+                    return <li key={index}><span>{ingred}</span><span>{measures[index]}</span></li>
                   }
                   else {
                     return
